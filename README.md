@@ -65,4 +65,4 @@ Some things that are considered while grading.
 * The grader will need to reproduce your solution. Make sure you put in all instructions for us to run your demos.
 * The assignment should be worked on and parts committed and pushed as often as possible. In other words, do not wait until the day the assignment is due.  Note there are multiple submission deadlines that will count towards your final grade.  Just completing it once at the end will not qualify for full points. Each milestone is worth a certain number of points.
 * To get an A in the assignment your work needs to be "excellent". It does not mean "nothing really wrong" or "good enough". I have high expectations.
-* Graduate students: You will be held to a higher level of scholarship for content and quality of your tool demos.
+* Graduate students: You will be held to a higher level of scholarship for content and quality of your tool demos..
