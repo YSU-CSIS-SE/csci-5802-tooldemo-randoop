@@ -5,8 +5,9 @@
 * Go to https://randoop.github.io/randoop/   (Hey, it's a github project page!)
 * Click the button to download the latest release, and get the "randoop-all" version of the zip file.
 * Uncompress randoop and make note of it's filepath.
-* Test it by typing in the following: 
+* Test it by typing in the following:  
 java -ea -classpath "linux file path and name to randoop.jar" randoop.main.Main help  
+  
 Example:
 
 ```
