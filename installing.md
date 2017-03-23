@@ -28,3 +28,6 @@ gentests -- Generates unit tests for a set of classes.
 
 help -- Displays a help message for a given command.
 ```
+guesser (mark): user selects a number between 1-10, and stats are reported.
+frogger (mark): ASCII version of frogger
+insert java here
