@@ -9,7 +9,8 @@
 java -ea -classpath "linux file path and name to randoop.jar" randoop.main.Main help  
 Example:
 
-```main@main-VirtualBox:~$ java -ea -classpath /home/main/randoop-all-3.1.2.jar randoop.main.Main help 
+```
+main@main-VirtualBox:~$ java -ea -classpath /home/main/randoop-all-3.1.2.jar randoop.main.Main help 
 
 Randoop for Java version 3.1.2.
 
@@ -24,8 +25,5 @@ Commands:
 
 gentests -- Generates unit tests for a set of classes.
 
-help -- Displays a help message for a given command.```
-
-
-java -ea -classpath /home/main/randoop-all-3.1.2.jar randoop.main.Main help
-
+help -- Displays a help message for a given command.
+```
