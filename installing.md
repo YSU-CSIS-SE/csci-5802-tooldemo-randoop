@@ -28,6 +28,15 @@ gentests -- Generates unit tests for a set of classes.
 
 help -- Displays a help message for a given command.
 ```
-guesser (mark): user selects a number between 1-10, and stats are reported.
-frogger (mark): ASCII version of frogger
-insert java here
+guesser (mark): user selects a number between 1-10, and stats are reported.  
+frogger (mark): ASCII version of frogger  
+insert java here  
+
+* Running gentests parameter with default settings on GuessApp.
+* With Guessapps we'll invoke destination folder to change on where to place the test files.
+* Run an output limiter on the number of tests and then a limitation on the runtime for to computing the tests.
+
+
+Negatives currently... Limited criteria for selecting tests....refine later.
+randoop limits on number of tests returned or time taken to compute said tests and also allows for
+disable disabling regression tests and error revealin tests 
