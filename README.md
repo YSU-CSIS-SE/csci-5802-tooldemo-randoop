@@ -7,7 +7,7 @@ __Final Due Date:__  5/1/2017 (by 23:59)
 
 __Total points possible:__ 100
 
-__Percentage of final gradee:__ 20%
+__Percentage of final gradee:__ 20%  alsjkfsadlkjf
 
 You will do this assignment in a team of two people. You will be responsible to select your team of two. Try to pair up with people you don't already know, i.e., try to make some new friends.  There are 18 students in the class.  That means we can cover 9 tools from the table below.
 
