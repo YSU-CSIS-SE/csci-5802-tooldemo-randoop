@@ -1,0 +1,39 @@
+# Randoop 
+
+Randoop is a program that automatically generates JUnit test files for Java classes. Randoop
+outputs two kinds of tests:
+
+* Error-Revealing Tests: Tests that detect bugs in the current code
+* Regression Tests: Tests that can be used to detect other bugs
+
+Usually, the user fixes all errors that appear in error-revealing tests and then rerun randoop
+until it does not generate any error-revealing tests.
+
+Example:
+
+````
+java -classpath bin;RANDOOP_PATH\randoop-all-3.0.10.jar randoop.main.Main gentests -testfile = guessapp.GuessLogic
+````
+
+Extensions:
+3a. User enters **-junit-output-dir=<classpath>** to change the destination of the test files
+3b. User enters **--timelimit=<int>** to force Randoop to stop generate tests after a period of time
+3c. User enters **--outputlimit=<int>** to limit the number of regression and error-revealing tests
+3d. User enters **--omitmethods=<methodname>** to prevent tests being generated for a specific method
+ 
+
+* -junit-output-dir=<classpath> - Generate JUnit and specify the folder the testing files will be saved in
+* --timelimit=<int> - Generate JUnit for a specified timelimit
+* --outputlimit=<int> - Generate JUnit while limiting the number of regression and error-revealing
+tests to ouptut  
+* --omitmethods=<method name> - Generate JUnit tests that omit specific methods.
+
+The Frogger program includes multiple classes, so we will be using it to
+illustrating the following use case:
+
+* --classlist - Generate JUnit tests for several classes listed in a textfile.
+
+For the JFreeChart program, we will illustrate how to use Randoop to develop JUnit test files for
+an opensource project
+
+
