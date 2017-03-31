@@ -1,4 +1,5 @@
-# Randoop 
+
+# Randoop Write-up
 
 Randoop is a program that automatically generates JUnit test files for Java classes. Randoop
 outputs two kinds of tests:
@@ -9,31 +10,59 @@ outputs two kinds of tests:
 Usually, the user fixes all errors that appear in error-revealing tests and then rerun randoop
 until it does not generate any error-revealing tests.
 
-Example:
+## Installation
+
+To install randoop, a user simply has to do the following:
+
+* Go to https://randoop.github.io/randoop/   (Hey, it's a github project page!)
+* Click the button to download the latest release, and get the "randoop-all" version of the zip file.
+* Uncompress randoop and make note of it's filepath.
+* Test it by typing in the following:  
+java -ea -classpath "linux file path and name to randoop.jar" randoop.main.Main help  
+
+## Running Randoop
+
+Randoop does not include a GUI component, so Randoop will be run from the command line. To run 
+Randoop, we use a command-line command similar to this example:
 
 ````
-java -classpath bin;RANDOOP_PATH\randoop-all-3.0.10.jar randoop.main.Main gentests -testfile = guessapp.GuessLogic
+java -classpath bin;RANDOOP_PATH\randoop-all-3.0.10.jar randoop.main.Main gentests -testclass=guessapp.GuessLogic
 ````
+The command can be broken down into the following components:
 
-Extensions:
-3a. User enters **-junit-output-dir=<classpath>** to change the destination of the test files
-3b. User enters **--timelimit=<int>** to force Randoop to stop generate tests after a period of time
-3c. User enters **--outputlimit=<int>** to limit the number of regression and error-revealing tests
-3d. User enters **--omitmethods=<methodname>** to prevent tests being generated for a specific method
+* **java** - Calls the JVM enviroment  
+* **-classpath** - Adds a classpath to the java environment. For this program specifically, we are
+ going to add the path to randoop-all-3.0.10 and the path to the class files being tested  
+* **randoop.main.Main** - Invokes Randoop's main class   
+* **gentests** - The command that generates unit tests  
+* **testclass=<classname>** - Specifies the class that Randoop will generate tests for  
+
+Note - If the class being tested is part of a package, the classpath always contains the 
+directory where you would expect to see the first part of the package name as a subdirectory.
+When entering the desired class in **testclass**, it should be fully qualified by the package name
+(e.g. guessapp.GuessLogic).
+
+## Command-line Options
+
+Randoop includes several command-line options that allows the user to tailor the way Randoop runs
+and modify the test files output by Randoop. The follwoing list includes a few exmaples
+
+* **--junit-output-dir=<classpath>** - Change the destination of the generated test files
+* **--dont-output-tests=<boolean>** - Run test generation without output
+* **--timelimit=<int>** - Forces Randoop to stop generate tests after a period of time
+* **--outputlimit=<int>** - Limits the number of regression and error-revealing tests
+* **--omitmethods=<regex>** - Prevents tests being generated for methods whose name matches the
+regular expression given
+* **--inputlimit=<int>** - Limits the number of test method candidates generated internally
+* **--forbid-null=<boolean>** - Forbids Randoop from using null as input to methods or constructors
+* **--testsperfile=<int>** - Limits the number of tests to write to each JUnit file
+* **--error-test-basename=<string>** - Choose the base name of the JUnit file containing error-revealing
+tests
+* **--regression-test-basename=<string>** - Choose the base name for the JUnt file containing 
+regression tests 
+
  
 
-* -junit-output-dir=<classpath> - Generate JUnit and specify the folder the testing files will be saved in
-* --timelimit=<int> - Generate JUnit for a specified timelimit
-* --outputlimit=<int> - Generate JUnit while limiting the number of regression and error-revealing
-tests to ouptut  
-* --omitmethods=<method name> - Generate JUnit tests that omit specific methods.
 
-The Frogger program includes multiple classes, so we will be using it to
-illustrating the following use case:
-
-* --classlist - Generate JUnit tests for several classes listed in a textfile.
-
-For the JFreeChart program, we will illustrate how to use Randoop to develop JUnit test files for
-an opensource project
 
 
