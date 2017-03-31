@@ -89,7 +89,7 @@ number of tests per file
 3. Change the directory to the destination of the test files    
 4. Use a console command to call the randoop program and run it on the text file    
  -The console command should add classpathes that piont to the randoop-all-3.0.10.jar file and the .jar file containing the library classes     
-5. User uses the **--testsperfile=<int>** command to specify the number of tests per JUnit file
+5. User uses the **--testsperfile=\<int>** command to specify the number of tests per JUnit file
 6. The system reads the text file and finds the list of classes to be tested    
 7. The system reads the classes and lists all methods found by Randoop  
 8. The system begins generating test functions for each method in the class file   
