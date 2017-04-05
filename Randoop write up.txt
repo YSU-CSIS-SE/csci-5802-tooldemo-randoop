@@ -95,8 +95,47 @@ expected value with assertTrue(), as well as verifying that methods do not accep
 method arguments by testing for ArrayIndexOutofBounds exceptions. The test files also verify that
 the toString() method is consistent with the expected variable values.
 
+## Use Case 2
 
+The Frogger project is a game that emulates the original Frogger aracade game. The goal of the
+game is for the player to reach the other side of the screen while evading the different enemy
+characters. The Frogger project contains seven classes: Character.class, Chaser.class, Hider.class,
+Jumper.class, Patroller.class, ThirdTurn.class, and FroggerApp.class. Instead having to enter
+multiple **testclass=<classname>** commands, a user can create a textfile that includes all of the
+class files that the user wants to use to create test files. The text file **testclasses.txt**
+is listed below.
 
+All the user has to do is place the textfile into the designate classpath and invoke the file
+using the command **--classlist=<textfile>**. To illustrate this, we will generate tests for the
+Frogger class using the following command:
+
+````
+java -classpath C:\randoop-3.0.10\randoop-all-3.0.10.jar;C:\Users\esplin\Documents\NetBeansProjects\Frogger\build\classes randoop.main.Main gentests --classlist=classlist.txt --omitmethods=frogger.Jumper.act
+````
+
+Note: We omited the act method in Jumper.class because the method was nondeterministic and could 
+not have test generated.
+
+Randoop first generated test inputs. The difference with Frogger is that, because the project
+contains a GUI component, Randoop generated several Java visual objects (e.g. JLabels, JButtons,
+JFrames,etc). Randoop would also load all of the GUI components, which slowed my computer down to
+a crawl. 
+
+Randoop generated 184000 normal method executions and 73 exceptional method executions.
+The average method execution time for nomal termination was 0.507 and the average method execution
+time for exceptional termination was 69.6. The number of regression tests created was 324.
+
+Because Randoop only generated 324 tests. The program only generated two test files.
+RegressionTest.java is a single class with a @Runwith annoation that invokes all generate test
+files (this is unnecessary because there is only one other test file. RegressionTest0.java is
+very similar to the test files generated for use case 1. The test methods input
+different argument values into the class methods and verify that each variable contains the 
+expected value with assertTrue(). The test methods also verify that methods do not accept out of bounds
+method arguments by testing for ArrayIndexOutofBounds exceptions. The test files also verify that
+the toString() method is consistent with the expected variable values. The main differences
+from the last use case is that some of the test methods are used to test variables in the GUI,
+such as testing that the cursor location is validate or that VolatileImage objects do not lose
+their contents during execution.
 
 
 
