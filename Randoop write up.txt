@@ -73,7 +73,7 @@ The first use case was run on the GuessLogic class in the GuessApp project. The 
 invoke Randoop on GuessLogic.class is listed below.
 
 ````
-C:\randoop-3.0.10\randoop-all-3.0.10.jar;C:\User\esplin\Documents\NetBeansProjects\GuessApp\build\classes randoop.main.Main genests --testclass=guessapp.GuessLogic
+java -classpath C:\randoop-3.0.10\randoop-all-3.0.10.jar;C:\User\esplin\Documents\NetBeansProjects\GuessApp\build\classes randoop.main.Main gentests --testclass=guessapp.GuessLogic
 ````
 
 The first thing Randoop did was generate test inputs for each of the test files. By the end,
@@ -137,5 +137,49 @@ from the last use case is that some of the test methods are used to test variabl
 such as testing that the cursor location is validate or that VolatileImage objects do not lose
 their contents during execution.
 
+## Use Case 3
 
+JfreeChart is a comprehensive free chart library for the Java platform.
+For this use case, we will demonstrate how effective Randoop is at document
+java libraries. We will create a *classlist.txt* file that contains the
+names of all the class files in the JCommon-1.0.23.jar file. 
 
+After compiling classlist.txt (which contains 131 class names) we generate
+the test files using the command
+
+````
+java -classpath C:\Users\esplin\jfreechart-1.0.19\lib\jcommon-1.0.23.jar;C:\randoop-3.0.10\randoop-all-3.0.10.jar randoop.main.Main gentests --classlist=classlist.txt --testsperfile=10
+````
+
+Note: We limited the number of tests per file to ten in order to keep the
+number of test files generated manageable.
+
+The program begins generating test inputs for the variables in the various
+classes. Like use case 2, the program genrated severl JVM windows when
+generating inputs. The program also, oddly enough, tried to send a file to
+my printer several times while generating inputs.
+
+Randoop generated 629201 normal method executions and 303 exceptional
+method executions. The average method execution time for nomal 
+termination was 0.125 and the average method execution time for exceptional
+termination is 60.6.
+
+The program created 4 error-revealing tests and created 1 ErrorTest files.
+The program created 1246 regression tests and created 125 error test files.
+Like the regression tests, ErrorTest.java is a single class that uses a
+@Runwith annotation to invoke ErrorTest0.java. RegressionTest.java also
+contains a class that uses the @RunWith annotation to invoke the other 125
+regression tests.
+
+The error-revealing tests are constructed just like the regression tests.
+The only difference is that the test files include comments telling the
+user what error caused the test to fail during generation. For example,
+test2() in ErrorTest0 includes the comment:
+
+````
+// during test generation this statement threw an exception of type java.lang.NullPointerException in error
+````
+
+If JFreeChart was still under development, we would find the source of
+these exceptions, edit the source code, and rerun Randoop to see if the 
+program generates these errors again.
