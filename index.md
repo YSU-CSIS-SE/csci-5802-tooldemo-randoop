@@ -1,3 +1,8 @@
+---
+layout: markdown
+title: Randoop
+---
+
 # Randoop Write-up
 
 Randoop is a program that automatically generates JUnit test files for Java classes. Randoop
