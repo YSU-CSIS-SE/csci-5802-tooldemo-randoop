@@ -1,4 +1,3 @@
-<html>
 # Randoop Write-up
 
 Randoop is a program that automatically generates JUnit test files for Java classes. Randoop
@@ -185,4 +184,3 @@ test2() in ErrorTest0 includes the comment:
 If JFreeChart was still under development, we would find the source of
 these exceptions, edit the source code, and rerun Randoop to see if the 
 program generates these errors again.
-</html>
