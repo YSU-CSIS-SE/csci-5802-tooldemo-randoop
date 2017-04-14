@@ -5,6 +5,9 @@ theme: jekyll-theme-time-machine
 ---
 
 # Randoop Write-up
+As stated by it's creators:  
+Do you love writing unit tests to find bugs in your programs? Or, would you prefer that the tests were written for you automatically?  
+
 Randoop is a program that automatically generates JUnit test files for Java classes. Randoop
 outputs two kinds of tests:
 
