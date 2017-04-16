@@ -34,7 +34,7 @@ java -ea -classpath "linux file path and name to randoop.jar" randoop.main.Main 
 
 ## Running Randoop
 
-#### NOTE: The Windows path separator is ";" - Linux path separator is ":" -- In Windows if cp argument does not contains white space, the "quotes" is optional.  
+#### NOTE: The Windows path separator is ";" - Linux path separator is ":" -- In Windows if cp argument does not contains white space, the "quotes" are optional.  
 
 Randoop does not include a GUI component, so Randoop will be run from the command line. To run 
 Randoop, we use a command-line command similar to this example:
