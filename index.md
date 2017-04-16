@@ -77,6 +77,7 @@ regression tests
 
  
 ## Use Case 1
+[GuessApp Code](https://github.com/YSU-CSIS-SE/csci-5802-tooldemo-randoop/tree/master/GuessApp)
 
 GuessApp is a simple game that generates a random number between 1 and 10 and records how long it
 takes for the user to guess the correct number. The project includes two files: GuessLogic.java,
@@ -110,6 +111,7 @@ method arguments by testing for ArrayIndexOutofBounds exceptions. The test files
 the toString() method is consistent with the expected variable values.
 
 ## Use Case 2
+[Frogger Code](https://github.com/YSU-CSIS-SE/csci-5802-tooldemo-randoop/tree/master/Frogger)
 
 The Frogger project is a game that emulates the original Frogger aracade game. The goal of the
 game is for the player to reach the other side of the screen while evading the different enemy
@@ -152,6 +154,7 @@ such as testing that the cursor location is validate or that VolatileImage objec
 their contents during execution.
 
 ## Use Case 3
+[JFreeChart Code](https://github.com/YSU-CSIS-SE/csci-5802-tooldemo-randoop/tree/master/jfreechart-1.0.19)
 
 JfreeChart is a comprehensive free chart library for the Java platform.
 For this use case, we will demonstrate how effective Randoop is at document
