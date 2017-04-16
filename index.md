@@ -85,28 +85,31 @@ Randoop had generated 1016988 normal method executions and 6748 exceptional meth
 The average method execution time for nomal termination was 0.0901 and the average method execution
 time for exceptional termination was 0.101. The number of regression tests created was 35028.
 
-![Use_Case_1_3](/Use_Case_1_3)
-![Use_Case_1_2](/Use_Case_1_2)
+![Use_Case_1_3](/Use_Case_1_3.png)
+
+![Use_Case_1_2](/Use_Case_1_2.png)
 
 Randoop then generated each of the JUnit test files. Randoop generate 71 test files and placed
 them in the bin folder of the GuessApp project.
 
-![Use_Case_1_4](/Use_Case_1_4)
+![Use_Case_1_4](/Use_Case_1_4.png)
 
 The regression test files are each named RegressionTest*x*.java (x is the number of the test file).
 There is also a file called RegressionTest.java that contains a single class thta contains an
 **@Runwith** annotation that invokes all of the related test files. This class is used to run all
 of the JUnit test files. 
 
-![Use_Case_1_5](/Use_Case_1_5)
-![Use_Case_1_6](/Use_Case_1_6)
+![Use_Case_1_5](/Use_Case_1_5.png)
+
+![Use_Case_1_6](/Use_Case_1_6.png)
+
 The test files themselves have a wide range of test methods, most of which involve inputing
 different argument values into the class methods and verifying that each variable contains the 
 expected value with assertTrue(), as well as verifying that methods do not accept out of bounds
 method arguments by testing for ArrayIndexOutofBounds exceptions. The test files also verify that
 the toString() method is consistent with the expected variable values.
 
-![Use_Case_1_7](/Use_Case_1_7)
+![Use_Case_1_7](/Use_Case_1_7.png)
 
 ## Use Case 2
 [Frogger Code](https://github.com/YSU-CSIS-SE/csci-5802-tooldemo-randoop/tree/master/Frogger)
@@ -119,7 +122,7 @@ multiple **testclass=<classname>** commands, a user can create a textfile that i
 class files that the user wants to use to create test files. The text file **testclasses.txt**
 is listed below.
 
-![Use_Case_2_1](/Use_Case_2_1)
+![Use_Case_2_1](/Use_Case_2_1.png)
 
 All the user has to do is place the textfile into the designate classpath and invoke the file
 using the command **--classlist=<textfile>**. To illustrate this, we will generate tests for the
@@ -137,19 +140,19 @@ contains a GUI component, Randoop generated several Java visual objects (e.g. JL
 JFrames,etc). Randoop also opened all of the GUI components after creating them,
 which did slow down my computer.
 
-![Use_Case_2_2](/Use_Case_2_2)
+![Use_Case_2_2](/Use_Case_2_2.png)
 
 Randoop generated 184000 normal method executions and 73 exceptional method executions.
 The average method execution time for nomal termination was 0.507 and the average method execution
 time for exceptional termination was 69.6. The number of regression tests created was 324.
 
-![Use_Case_2_4](/Use_Case_2_4)
+![Use_Case_2_4](/Use_Case_2_4.png)
 
 Because Randoop only generated 324 test methods, the program only generated two test files.
 RegressionTest.java is a single class with a @Runwith annoation that invokes all generate test
 files (this is unnecessary because there is only one other test file. 
 
-![Use_Case_2_5](/Use_Case_2_5)
+![Use_Case_2_5](/Use_Case_2_5.png)
 
 RegressionTest0.java is
 very similar to the test files generated for use case 1. The test methods input
@@ -162,7 +165,7 @@ the Java visual objects. This is done in several ways such as testing that
 the cursor location is in the bounds of the JWindow or that VolatileImage
 objects do not lose their contents during execution.
 
-![Use_Case_2_6](/Use_Case_2_6)
+![Use_Case_2_6](/Use_Case_2_6.png)
 
 ## Use Case 3
 [JFreeChart Code](https://github.com/YSU-CSIS-SE/csci-5802-tooldemo-randoop/tree/master/jfreechart-1.0.19)
@@ -172,7 +175,7 @@ For this use case, we will demonstrate how effective Randoop is at document
 java libraries. We will create a *classlist.txt* file that contains the
 names of all the class files in the JCommon-1.0.23.jar file. 
 
-![Use_Case_3_1](/Use_Case_3_1)
+![Use_Case_3_1](/Use_Case_3_1.png)
 
 After compiling classlist.txt (which contains 131 class names) we generate
 the test files using the command
@@ -195,12 +198,12 @@ termination was 0.125 and the average method execution time for exceptional
 termination is 60.6.
 
 
-![Use_Case_3_2](/Use_Case_3_2)
+![Use_Case_3_2](/Use_Case_3_2.png)
 
 The program created 4 error-revealing tests and created 1 ErrorTest files.
 The program created 1246 regression tests and created 125 error test files.
 
-![Use_Case_3_3](/Use_Case_3_3)
+![Use_Case_3_3](/Use_Case_3_3.png)
 
 Like the regression tests, ErrorTest.java is a single class that uses a
 @Runwith annotation to invoke ErrorTest0.java. RegressionTest.java also
@@ -216,7 +219,7 @@ test2() in ErrorTest0 includes the comment:
 // during test generation this statement threw an exception of type java.lang.NullPointerException in error
 ````
 
-![Use_Case_3_4](/Use_Case_3_4)
+![Use_Case_3_4](/Use_Case_3_4.png)
 
 If JFreeChart was still under development, we would find the source of
 these exceptions, edit the source code, and rerun Randoop to see if the 
@@ -229,7 +232,7 @@ the test methods are used to verify that test variables create the expected
 result in the program and uses boolean values to verify that the GUI 
 components of JFrame create the correct objects.
 
-![Use_Case_3_5](/Use_Case_3_5)
+![Use_Case_3_5](/Use_Case_3_5.png)
 
 ##Tool Evaluation
 
@@ -246,21 +249,21 @@ test methods are created, what kinds of methods are tested, etc. The user
 has a great deal of flexibility in how the user wants the tests to be
 generated.
 
-**Adaptability**: Because of the way that Randoop generates tests, it cannot
+* **Adaptability**: Because of the way that Randoop generates tests, it cannot
 create tests on methods that are nondeterministic or set  static field.
 For example, if a method's return value is based on a random number generator,
 then Randoop will find different results every time it runs the subtests.
 When this happens, Randoop stops generating tests for ALL methods and the
 user has to use the **--log** command to find what method caused the error.
 
-**Efficiency**: Randoop is able to generate a large number of tests very 
+* **Efficiency**: Randoop is able to generate a large number of tests very 
 quickly, the program is able to generate test in literally less than a
 second.
 
-**Installation**: Randoop is very easy to install, all the user has to 
+* **Installation**: Randoop is very easy to install, all the user has to 
 do is unzip the main folder and place it in a directory.
 
-**Learning Curve**: While the program itself is easy to understand. Setting
+* **Learning Curve**: While the program itself is easy to understand. Setting
 new classpaths so that the program can find the desired class file is
 difficult at first. Randoop requires that the classpath contains the
 directory where the first part of the package name is the subdirectory
@@ -268,7 +271,7 @@ directory where the first part of the package name is the subdirectory
 one of the subdirectories is the GuessApp folder). This is not mentioned
 in the Randoop manual and took a great deal of research to discover.
 
-**Scalability:** In order to generate tests for multiple classes, the user
+* **Scalability:** In order to generate tests for multiple classes, the user
 has to create a text file that lists all of the class files. The larger
 the project, the longer it takes the user to create this text file. It 
 would be more helpful if the program was able to scan a directory for
