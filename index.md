@@ -234,7 +234,7 @@ components of JFrame create the correct objects.
 
 ![Use_Case_3_5](/Use_Case_3_5.png)
 
-##Tool Evaluation
+## Tool Evaluation
 
 We have decided to evaluate the Randoop program based on the following 
 criteria:
