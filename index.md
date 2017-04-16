@@ -91,7 +91,7 @@ time for exceptional termination was 0.101. The number of regression tests creat
 Randoop then generated each of the JUnit test files. Randoop generate 71 test files and placed
 them in the bin folder of the GuessApp project.
 
-![Use_Case_1_4](/Use_Case_1_4)
+![Use_Case_1_4] (/Use_Case_1_4)
 
 The regression test files are each named RegressionTest*x*.java (x is the number of the test file).
 There is also a file called RegressionTest.java that contains a single class thta contains an
