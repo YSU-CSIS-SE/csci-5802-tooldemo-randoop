@@ -1,7 +1,5 @@
 ﻿### Randoop Write-up
 
-___
-
 As stated by it's creators:  
 Do you love writing unit tests to find bugs in your programs? Or, would you prefer that the tests were written for you automatically?  
 
@@ -15,8 +13,6 @@ Usually, the user fixes all errors that appear in error-revealing tests and then
 until it does not generate any error-revealing tests.
 
 ## Installation
-
-___
 
 To install randoop, a user simply has to do the following:
 
