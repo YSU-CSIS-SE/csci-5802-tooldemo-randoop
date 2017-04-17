@@ -1,4 +1,4 @@
-﻿### Randoop Write-up
+﻿# Randoop Write-up
 
 As stated by it's creators:  
 Do you love writing unit tests to find bugs in your programs? Or, would you prefer that the tests were written for you automatically?  
