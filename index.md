@@ -39,7 +39,7 @@ The command can be broken down into the following components:
  going to add the path to randoop-all-3.0.10 and the path to the class files being tested  
 * **randoop.main.Main** - Invokes Randoop's main class   
 * **gentests** - The command that generates unit tests  
-* **testclass=<classname>** - Specifies the class that Randoop will generate tests for  
+* **testclass=\<classname\>** - Specifies the class that Randoop will generate tests for  
 
 Note - If the class being tested is part of a package, the classpath always contains the 
 directory where you would expect to see the first part of the package name as a subdirectory.
@@ -51,18 +51,18 @@ When entering the desired class in **testclass**, it should be fully qualified b
 Randoop includes several command-line options that allows the user to tailor the way Randoop runs
 and modify the test files output by Randoop. The follwoing list includes a few exmaples
 
-* **--junit-output-dir=<classpath>** - Change the destination of the generated test files
-* **--dont-output-tests=<boolean>** - Run test generation without output
-* **--timelimit=<int>** - Forces Randoop to stop generate tests after a period of time
-* **--outputlimit=<int>** - Limits the number of regression and error-revealing tests
-* **--omitmethods=<regex>** - Prevents tests being generated for methods whose name matches the
+* **--junit-output-dir=\<classpath\>** - Change the destination of the generated test files
+* **--dont-output-tests=\<boolean\>** - Run test generation without output
+* **--timelimit=\<int\>** - Forces Randoop to stop generate tests after a period of time
+* **--outputlimit=\<int\>** - Limits the number of regression and error-revealing tests
+* **--omitmethods=\<regex\>** - Prevents tests being generated for methods whose name matches the
 regular expression given
-* **--inputlimit=<int>** - Limits the number of test method candidates generated internally
-* **--forbid-null=<boolean>** - Forbids Randoop from using null as input to methods or constructors
-* **--testsperfile=<int>** - Limits the number of tests to write to each JUnit file
-* **--error-test-basename=<string>** - Choose the base name of the JUnit file containing error-revealing
+* **--inputlimit=\<int\>** - Limits the number of test method candidates generated internally
+* **--forbid-null=\<boolean\>** - Forbids Randoop from using null as input to methods or constructors
+* **--testsperfile=\<int\>** - Limits the number of tests to write to each JUnit file
+* **--error-test-basename=\<string\>** - Choose the base name of the JUnit file containing error-revealing
 tests
-* **--regression-test-basename=<string>** - Choose the base name for the JUnt file containing 
+* **--regression-test-basename=\<string\>** - Choose the base name for the JUnt file containing 
 regression tests 
 
  
@@ -119,7 +119,7 @@ The Frogger project is a game that emulates the original Frogger aracade game. T
 game is for the player to reach the other side of the screen while evading the different enemy
 characters. The Frogger project contains seven classes: Character.class, Chaser.class, Hider.class,
 Jumper.class, Patroller.class, ThirdTurn.class, and FroggerApp.class. Instead having to enter
-multiple **testclass=<classname>** commands, a user can create a textfile that includes all of the
+multiple **testclass=\<classname\>** commands, a user can create a textfile that includes all of the
 class files that the user wants to use to create test files. The text file **testclasses.txt**
 is listed below.
 
