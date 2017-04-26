@@ -49,7 +49,7 @@ When entering the desired class in **testclass**, it should be fully qualified b
 ## Command-line Options
 
 Randoop includes several command-line options that allows the user to tailor the way Randoop runs
-and modify the test files output by Randoop. The follwoing list includes a few exmaples
+and modify the test files output by Randoop. The following list includes a few examples:
 
 * **--junit-output-dir=\<classpath\>** - Change the destination of the generated test files
 * **--dont-output-tests=\<boolean\>** - Run test generation without output
