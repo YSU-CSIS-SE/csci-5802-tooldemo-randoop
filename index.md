@@ -240,11 +240,11 @@ components of JFrame create the correct objects.
 We have decided to evaluate the Randoop program based on the following 
 criteria:
 
-**Ease of Use**: Because the program does not include a GUI component, the
+* **Ease of Use**: Because the program does not include a GUI component, the
 user must be atleast somewhat familiar with command-line arguments and 
 running java from the console.
 
-**Options**: The program includes a plethora of options for creating JUnit
+* **Options**: The program includes a plethora of options for creating JUnit
 tests. The user can customize how many test files are generated, how many
 test methods are created, what kinds of methods are tested, etc. The user
 has a great deal of flexibility in how the user wants the tests to be
