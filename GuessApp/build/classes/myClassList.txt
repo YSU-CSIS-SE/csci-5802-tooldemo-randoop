@@ -1,2 +1,0 @@
-guessapp.GuessLogic
-guessapp.GuessApp

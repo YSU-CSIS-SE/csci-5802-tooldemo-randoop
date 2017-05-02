@@ -24,18 +24,6 @@ We will be running randoop on two example programs and one open source project.
 6. The system ouputs the file names for the test files and the names of the test methods
 7. The system places the test files in the current directory
 
-**Alternate Course A:**    
-A4. The system cannot find the Randoop main method    
-A5. The system prints an error message informing the user that Randoop.main.Main can't be found   
-
-**Alternate Course B:**   
-B4. The system cannot find the class file listed    
-B5. The system prints a message informing the user that the class file cannot be found
-
-**Alternate Course C:**   
-C5. The system cannont find other packages imported by the program   
-C6. Print an error informing the user that the files could not be found   
-
 ## Use Case 2: Frogger Project
 
 **Title:** Randoop JUnit generation  
@@ -60,18 +48,6 @@ C6. Print an error informing the user that the files could not be found
 8. The system ouputs the file names for the test files and the names of the test methods
 9. The system places the test files in the current directory
 
-**Alternate Course A:**    
-A4. The system cannot find the Randoop main method    
-A5. The system prints an error message informing the user that Randoop.main.Main can't be found   
-
-**Alternate Course B:**        
-B4. The system cannot find a class file listed in the text file    
-B5. The system prints a message informing the user that the class file cannot be found
-
-**Alternate Course C:**          
-C5. The system cannont find other packages imported by the program   
-C6. Print an error informing the user that the files could not be found   
-
 ## Use Case 3: JFreeChart
 
 **Desired Outcome:** Generate a series of JUnit test files for the project's library files with only a set 
@@ -95,15 +71,3 @@ number of tests per file
 8. The system begins generating test functions for each method in the class file   
 9. The system ouputs the file names for the test files and the names of the test methods    
 10. The system places the test files in the current directory    
-
-**Alternate Course A:**     
-A4. The system cannot find the Randoop main method    
-A5. The system prints an error message informing the user that Randoop.main.Main can't be found      
-
-**Alternate Course B:**        
-B4. The system cannot find a class file listed in the text file    
-B5. The system prints a message informing the user that the class file cannot be found
-
-**Alternate Course C:**   
-C5. The system cannont find other packages imported by the program   
-C6. Print an error informing the user that the files could not be found    
