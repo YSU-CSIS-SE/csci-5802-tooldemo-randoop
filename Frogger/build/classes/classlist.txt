@@ -1,0 +1,7 @@
+frogger.Character
+frogger.Chaser
+frogger.Hider
+frogger.Jumper
+frogger.Patroller
+frogger.ThirdTurn
+frogger.FroggerApp
