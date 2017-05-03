@@ -126,7 +126,7 @@ annotatino to run the entire test suite.
 
 ![Use_Case_1_6](/Use_Case_1_6.png)
 
-The test files themselves have a wide range of test methods, most of which involve inputing
+The test files themselves have a wide range of test methods, most of which involve inputting
 different argument values into the class methods and verifying that each variable contains the 
 expected value with assertTrue(), as well as verifying that methods do not accept out of bounds
 method arguments by testing for exceptions. The test files also verify that
@@ -209,11 +209,11 @@ After compiling *classlist.txt* we generate the test files using the command
 java -classpath jfreechart-1.0.19\lib\jcommon-1.0.23.jar;C:\randoop-3.0.10\randoop-all-3.0.10.jar randoop.main.Main gentests --classlist=classlist.txt --testsperfile=10
 ````
 
-Note: We limited the number of tests per file to ten in order to keep the number of test methods
+Note: We limited the number of tests per file to 10 in order to keep the number of test methods
 per file manageable.
 
 The program begins generating test inputs for the variables in the various
-classes. Like use case 2, the program genrated several GUI windows when
+classes. Like use case 2, the program generated several GUI windows when
 generating inputs. The program also, oddly enough, tried to send a file to
 my printer several times while generating inputs.
 
@@ -221,14 +221,14 @@ Randoop generated:
 
 * 629201 normal method executions
 * 303 exceptional method executions
-* Average method execution time for nomal termination = 0.125s
+* Average method execution time for normal termination = 0.125s
 * Average method execution time for exceptional termination = 60.6s
 
 
 ![Use_Case_3_2](/Use_Case_3_2.png)
 
-The program created 4 error-revealing tests and created 1 ErrorTest files.
-The program created 1246 regression tests and created 125 error test files.
+The program created 4 error-revealing tests and created 1 ErrorTest file.
+The program created 1246 regression tests and created 125 RegressionTest files.
 
 ![Use_Case_3_3](/Use_Case_3_3.png)
 
@@ -274,8 +274,8 @@ test methods are created, what kinds of methods are tested, how to handle except
 has a great deal of flexibility in how they want the JUnit tests to be generated.
 
 * **Adaptability**: Because of the way that Randoop generates tests, it cannot
-create tests on methods that are nondeterministic or set static field. Randoop extends previously
-generated tests y adding new methods to them. If one of the subtests throws an exception, then
+create tests on methods that are nondeterministic or set static fields. Randoop extends previously
+generated tests by adding new methods to them. If one of the subtests throws an exception, then
 the test is considered flaky.
 
 For example, if a method's return value is based on a random number generator,
@@ -290,12 +290,12 @@ second.
 **Installation**: Randoop is very easy to install, all the user has to 
 do is unzip the main folder and place it in a directory.
 
-**Learning Curve**: While the program itself is easy to understand. Setting
+**Learning Curve**: While the program itself is easy to understand, setting
 new classpaths so that the program can find the desired class file is
 difficult at first. Randoop requires that the classpath contains the
-directory where the first part of the package name is the subdirectory. This is not mentioned
+directory where the first part of the package name is a subdirectory. This is not mentioned
 in the Randoop manual and outside of this manual there is very little documentation on the program.
-Overall, the program requires a great deal of trail and error.
+Overall, the program requires a great deal of trial and error.
 
 **Scalability:** In order to generate tests for multiple classes, the user
 has to create a text file that lists all of the class files. The larger
@@ -305,11 +305,11 @@ class files.
 
 **Usability of Tests:** While the program does generate a lot of tests, finding which tests are
 useful for describing the behavior of the class is another matter. The program seems to generate a test
-for every conceivable test imaginable, and if any of these tests fail, it woud be difficult to
+for every conceivable test imaginable, and if any of these tests fail, it would be difficult to
 determine how the code is affecting that test. 
 
 Overall, while the program does require some command-line knowledge and
-has a steep learning curve, the effeciency and customizability of the program
+has a steep learning curve, the efficiency and customizability of the program
 makes it a very convenient way to generate JUnit tests. The program is 
 especially good at generating tests files for java libraries. The program
 is easy to install as well, so it is very easy for a user to download the
