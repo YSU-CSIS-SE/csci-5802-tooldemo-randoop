@@ -21,7 +21,6 @@ many successful applications, especially on library classes like java.util.
 
 
 ## Installation
-
 To install randoop, a user simply has to do the following:
 
 * Go to https://randoop.github.io/randoop/   (Hey, it's a github project page!)
