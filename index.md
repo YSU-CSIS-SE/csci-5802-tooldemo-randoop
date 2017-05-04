@@ -14,7 +14,9 @@ until it does not generate any error-revealing tests.
 
 Randoop is still being used today by companies like ABB and Microsoft. Randoop has had 
 many successful applications, especially on library classes like java.util.
-  
+
+
+#### Video here:  
 [Click here for our demo video explaining Randoop](https://www.youtube.com/watch?v=us0x10KD2KU)
 
 
