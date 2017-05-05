@@ -303,7 +303,7 @@ the project, the longer it takes the user to create this text file. It
 would be more helpful if the program was able to scan a directory for
 class files.
 
-**Usability of Tests:** While the program does generate a lot of tests, finding which tests are
+* **Usability of Tests:** While the program does generate a lot of tests, finding which tests are
 useful for describing the behavior of the class is another matter. The program seems to generate a test
 for every conceivable test imaginable, and if any of these tests fail, it would be difficult to
 determine how the code is affecting that test. 
