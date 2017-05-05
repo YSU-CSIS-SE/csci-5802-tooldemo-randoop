@@ -278,26 +278,26 @@ create tests on methods that are nondeterministic or set static fields. Randoop 
 generated tests by adding new methods to them. If one of the subtests throws an exception, then
 the test is considered flaky.
 
-For example, if a method's return value is based on a random number generator,
+ * For example, if a method's return value is based on a random number generator,
 then Randoop will find different results every time it runs the subtest.
 When this happens, Randoop stops generating tests for **ALL** methods and the
 user has to use the **--log** command to find what method caused the error.
 
-**Efficiency**: Randoop is able to generate a large number of tests very 
+* **Efficiency**: Randoop is able to generate a large number of tests very 
 quickly, the program is able to generate test in literally less than a
 second.
 
-**Installation**: Randoop is very easy to install, all the user has to 
+* **Installation**: Randoop is very easy to install, all the user has to 
 do is unzip the main folder and place it in a directory.
 
-**Learning Curve**: While the program itself is easy to understand, setting
+* **Learning Curve**: While the program itself is easy to understand, setting
 new classpaths so that the program can find the desired class file is
 difficult at first. Randoop requires that the classpath contains the
 directory where the first part of the package name is a subdirectory. This is not mentioned
 in the Randoop manual and outside of this manual there is very little documentation on the program.
 Overall, the program requires a great deal of trial and error.
 
-**Scalability:** In order to generate tests for multiple classes, the user
+* **Scalability:** In order to generate tests for multiple classes, the user
 has to create a text file that lists all of the class files. The larger
 the project, the longer it takes the user to create this text file. It 
 would be more helpful if the program was able to scan a directory for
