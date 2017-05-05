@@ -15,12 +15,8 @@ until it does not generate any error-revealing tests.
 Randoop is still being used today by companies like ABB and Microsoft. Randoop has had 
 many successful applications, especially on library classes like java.util.
 
-
-## Video here:  
-[Click here for our demo video explaining Randoop](https://www.youtube.com/watch?v=us0x10KD2KU)
-
-
 ## Installation
+
 To install randoop, a user simply has to do the following:
 
 * Go to https://randoop.github.io/randoop/   (Hey, it's a github project page!)
@@ -323,3 +319,7 @@ The main issue with Randoop is sifting through all of the generated tests to fin
 describe the behavior that the user finds useful. To really make Randoop useful, you would need
 another program (or very dedicated employee) to search through the test files and compile the most
 useful results.
+
+## Video Demonstration
+
+[![Video Demonstration](http://img.youtube.com/vi/us0x10KD2KU&t=2s.jpg)](http://www.youtube.com/watch?v=us0x10KD2KU&t=2s)
