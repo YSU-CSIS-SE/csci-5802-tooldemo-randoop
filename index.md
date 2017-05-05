@@ -322,4 +322,4 @@ useful results.
 
 ## Video Demonstration
 
-[![Video Demonstration](http://img.youtube.com/vi/watchus0x10KD2KU&t.jpg)](http://www.youtube.com/watch?v=us0x10KD2KU&t=2s)
+[![Video Demonstration](http://img.youtube.com/vi/us0x10KD2KU/0.jpg)](http://www.youtube.com/watch?v=us0x10KD2KU&t=2s)
