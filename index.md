@@ -16,7 +16,7 @@ Randoop is still being used today by companies like ABB and Microsoft. Randoop h
 many successful applications, especially on library classes like java.util.
 
 
-#### Video here:  
+## Video here:  
 [Click here for our demo video explaining Randoop](https://www.youtube.com/watch?v=us0x10KD2KU)
 
 
